@@ -1,7 +1,6 @@
 <!DOCTYPE html><meta charset="utf-8"><title>TDI IMAGING</title><link rel=icon type="image/png" href="favicon.png"><!--[if lt IE 9]><script src="ie9.js"></script><script src="mediaqueries.js"></script><![endif]--><link href="http://fonts.googleapis.com/css?family=Ubuntu:700,400italic,400&amp;subset=latin,latin-ext" rel="stylesheet"><link rel="stylesheet" href="s.css"><body class=contact><header><a href="."><img src="logotoronto.png"></a><nav><a href=".">Home</a><a href="products">Products</a><a href="portfolio">Portfolio</a><a href="contact">Contact</a><a href="client">Client Login</a><a href="http://imagerie-tdi.com">Français</a></nav></header><footer><div><i></i><br> Follow us on facebook or something!<br>
 <i></i><br> We also have a blog!</div><nav><a href=".">Home</a><a href="products">Products</a><a href="portfolio">Portfolio</a><a href="contact">Contact</a><a href="client">Client Login</a><a href="http://imagerie-tdi.com">Français</a></nav><div id="copy">&copy; TDI imaging 2012</div></footer><h1>Contact</h1><div class="content"><address><div id="map"><iframe width=482 height=355 src="http://maps.cloudmade.com/iframe?directions=43.69363952076591,-79.66577857732773&amp;lat=43.69363952076591&amp;lng=-79.66577857732773&amp;zoom=15&amp;styleId=999"></iframe></div><a href="mailto:info@tdi-imaging.com">info@tdi-imaging.com</a> 
- 
-We can be contacted <br>Monday to Saturday <br>9:00am-5:00pm
+ <div id="dyntime"></div>We can be contacted <br>Monday to Saturday <br>9:00am-5:00pm
  
 <b>Phone:</b> 1-905 672-9211
 <b>Fax:</b> 1-905 672-3875
@@ -9,4 +8,18 @@ We can be contacted <br>Monday to Saturday <br>9:00am-5:00pm
  
 2201 Drew Rd.
 Mississauga, ON
-L5S 1E5</address></div>
+L5S 1E5</address></div><script>function calcTime(offset) {
+
+var d = new Date();
+
+var utc = d.getTime() + d.getTimezoneOffset() * 60000;
+
+return new Date(utc + 3600000*offset);
+}
+
+func=function(){
+ var foo=calcTime(-5)
+ document.getElementById("dyntime").innerHTML=(foo.getHours()>8&&foo.getHours()<18&&foo.getDay())?"<span style='color:#0f0'>We are currently open</span>":"<span style='color:#f00'>We are currently closed</span>";
+}
+func()
+setInterval(func,1000)</script>
