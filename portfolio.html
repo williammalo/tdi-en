@@ -135,4 +135,8 @@ var handler=function(event){
  }
 }
 var event=RegExp(" Mobile/").test(navigator.userAgent)?"touchstart":"mousedown";
-addEventListener(event,handler,false)</script>
+addEventListener(event,handler,false)
+</script><!--[if IE 9]><script src="PIE.js"></script><script>var collection=document.getElementsByTagName("nav")[0].getElementsByTagName("a")
+var i
+for(i in collection)
+PIE.attach(collection[i])</script><![endif]-->
