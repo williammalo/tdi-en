@@ -51,11 +51,11 @@ header nav a:nth-child(4){border-top-left-radius:8px;border-bottom-left-radius:8
 }.products ul{padding-left:1em}
 .products ul,.products li,.products article{line-height:1.9em}
 .products h2{font-size:2em}
-.products section>img{vertical-align:middle;max-width:42%;margin:4%;max-height:500px;-webkit-box-shadow:0 0 10px rgba(0,0,0,0.7);box-shadow:0 0 10px rgba(0,0,0,0.7)}
+.products section img{vertical-align:middle;max-width:42%;margin:4%;max-height:500px;-webkit-box-shadow:0 0 10px rgba(0,0,0,0.7);box-shadow:0 0 10px rgba(0,0,0,0.7)}
 @media screen and (max-width: 700px){.products section{padding:5%}
-.products section>img{max-width:62%;margin:5% 19% 0 19%}
+.products section img{max-width:62%;margin:5% 19% 0 19%}
 .products section>article{width:100% !important;padding:0;margin:0}
-}#gallery{display:inline-block;padding:5px;width:100%;-webkit-transform:translateY(0);-moz-transform:translateY(0);-o-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);-webkit-backface-visibility:hidden;-webkit-perspective:1000;}
+}#gallery{display:inline-block;padding:5px;padding-top:0;width:100%;-webkit-transform:translateY(0);-moz-transform:translateY(0);-o-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);-webkit-backface-visibility:hidden;-webkit-perspective:1000;}
 #gallery div{padding:10px 5px;position:absolute;overflow:hidden;-webkit-backface-visibility:hidden;-webkit-perspective:1000;}
 #gallery div img{width:100%;height:auto !important}
 .contact address{margin:50px auto;font-style:normal;width:820px;background:url("111noise.png");padding:40px;-webkit-box-shadow:0 0 10px rgba(0,0,0,0.7);box-shadow:0 0 10px rgba(0,0,0,0.7);white-space:pre-wrap;}
