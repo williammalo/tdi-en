@@ -99,8 +99,10 @@ if(Modernizr.csstransforms3d){
  }
 }
 mason=function(w,h,j,i,z,y,x,e){
+ setTimeout(function(){
  var foo=n[selected].getElementsByTagName("img")[0];
  foo.src=images[selected+1]
+ },10)
  var x=document.body.offsetWidth-10
  w=x/(x/200|0)
  h=w*0.4
